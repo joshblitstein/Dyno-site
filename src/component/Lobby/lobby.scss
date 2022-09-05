@@ -1,0 +1,55 @@
+.lobby-container{
+    background-color: #BD171E;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    transition: all 3s ease;
+
+}
+
+.lobby-container::after,
+.lobby-container::before{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    background: #BD171E;
+    bottom: 0em;
+  
+  
+
+}
+
+.lobby-container::before{
+    right: 50%;
+    transform: skew(0, 30deg);
+   
+    
+}
+
+.lobby-container::after{
+    left: 50%;
+    transform: skew(0, -30deg);
+}
+
+.banner{
+    height: inherit;
+    width: 100%;
+    z-index: 2;
+    opacity: 0.5;
+    transition: all 1s ease;
+    &:hover{
+        opacity: 1;
+    }
+
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: white;
+  }

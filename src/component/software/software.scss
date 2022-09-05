@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Roboto:wght@100;400&display=swap');
+.software-container{
+    background: linear-gradient( #E4CA9D, #C27904);
+
+    background-color: #E4CA9D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container{
+    background-color: transparent;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 5px 10px 50px;
+    transform: rotate(7deg); /* Equal to rotateZ(45deg) */
+    transition: all 500ms ease;
+    border-radius: 4%;
+    &:hover{
+        opacity: 1;
+        box-shadow: 0px 0px 0px;
+        transform: rotate(0deg); /* Equal to rotateZ(45deg) */
+    }
+       @media screen and (max-width: 920px) {
+        transform: rotate(0deg); 
+      }
+   
+}
+
+.software-right{
+    height: 90%;
+    width: 50%;
+    background-color: transparent;
+    z-index: 5;
+    
+}
+.software-left{
+    height: 90%;
+    width: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -5;
+   
+}
+
+.para{
+    padding: 0px;
+    font-family: Roboto;
+    font-weight: 400;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-family: Roboto;
+  
+
+    color: #BD171E;
+}
+
+.icon{
+    font-size: 200px;
+    color: #BD171E;
+    //transform: rotate(45deg); /* Equal to rotateZ(45deg) */
+    transition: all 1s ease;
+    &:hover{
+        color: transparent;
+        transform: rotate(360deg); /* Equal to rotateZ(45deg) */
+        font-size: 100px;
+       
+
+
+    }
+}

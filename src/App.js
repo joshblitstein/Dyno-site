@@ -1,23 +1,31 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Lobby from './component/Lobby/Lobby'
+import Gen from './component/gen/Gen'
+import Audio from './component/audio-stuff/Audio'
+import Price from './component/pricing/Price'
+import Topbar from './component/topbar/Topbar'
+import Flex from './component/design-flex/Flex'
+import Contact from './component/contact/Contact'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Software from './component/software/Software';
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+     {/* <Router> */}
+         <Topbar /> 
+        <div className='sections'>
+        <Lobby />
+        <Gen />
+        <Price />
+        <Software />
+        <Flex />
+        <Contact />
+      </div>
+      {/* </Router> */}
     </div>
   );
 }

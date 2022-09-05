@@ -1,0 +1,195 @@
+.flex-container{
+    background-color: #C27904;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+    flex-direction: column;
+}
+.art-container{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+}
+.art{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.art-two{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.styles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    box-shadow: 5px 10px 50px;
+    width: 20%;
+    transform: rotate(-7deg); /* Equal to rotateZ(45deg) */
+    transition: all ease 500ms;
+    &:hover{
+        transform: rotate(360deg); /* Equal to rotateZ(45deg) */
+    }
+}
+.styles-child{
+    background-color: #C27904;
+    width: 20%;
+    height: 50%;
+    border: 1px;
+    border-radius: 50%;
+    transform: rotate(14deg); /* Equal to rotateZ(45deg) */
+    transition: all ease 500ms;
+    &:hover{
+        transform: rotate(-360deg); /* Equal to rotateZ(45deg) */
+        height: 100%;
+        width: 100%;
+    }
+}
+.styles-two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    box-shadow: 5px 10px 50px;
+    width: 20%;
+    transform: rotate(-7deg); /* Equal to rotateZ(45deg) */
+    transition: all ease 500ms;
+    &:hover{
+        transform: rotate(360deg); /* Equal to rotateZ(45deg) */
+    }
+}
+ 
+
+.circle{
+    width: 95%;
+    background-color: black;
+    height: 7px;
+    //border: 1px solid black;
+    border-radius: 100%;
+   // z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s ease;
+    
+
+}
+
+
+.art-three{
+    //opacity: 0.5;
+    height: 100%;
+    width: 50%;
+    background: radial-gradient( #BD171E,#C27904, #C27904 );
+    
+
+    background-color: #E4CA9D;
+    display: flex;
+    border: 1px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 0px 5px;
+    transition: all 500ms ease;
+
+    &:hover{
+        opacity: 1;
+        transform: rotate(-9deg); /* Equal to rotateZ(45deg) */
+        box-shadow: 5px 5px 50px;
+
+    }
+}
+
+.eye{
+    height: 100%;
+    background: radial-gradient( #C27904,#C27904, #BD171E);
+
+    width: 50%;
+  //  border: 1px solid black;
+    border-radius: 100%;
+    background-color:#C27904;
+    transition: all 500ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.eye-child{
+    height: 100%;
+    width: 50%;
+   // border: 1px solid black;
+       background: radial-gradient( #BD171E,#BD171E, #C27904 );
+
+    border-radius: 100%;
+    background-color:#BD171E;
+    transition: all 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(0deg); /* Equal to rotateZ(45deg) */
+    &:hover{
+        transform: rotate(360deg); /* Equal to rotateZ(45deg) */
+        background-color: #C27904;
+    }
+
+    
+
+}
+.eye-child-two{
+    height: 50%;
+    width: 100%;
+    background: radial-gradient( #BD171E,#BD171E, #C27904 );
+
+    //border: 1px solid black;
+    border-radius: 100%;
+    background-color:#C27904;
+    transition: all 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.eye-child-three{
+    height: 100%;
+    width: 50%;
+   // border: 1px solid black;
+    border-radius: 100%;
+    background: radial-gradient( #BD171E,#C27904, #C27904 );
+
+    background-color:#BD171E;
+    transition: all 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        height: 0vh;
+        width:50vw;
+    }
+}
+
+h1{
+     color: #BD171E;
+    text-shadow:3px 4px 5px #000 ;
+    font-family: Roboto; 
+
+}
+

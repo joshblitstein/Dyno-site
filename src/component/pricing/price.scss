@@ -1,0 +1,67 @@
+//@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #7FEFBD;
+    --text-secondary: #c01b1b;
+    --bg-primary: #59595f;
+    --bg-secondary: #35354e;
+    --transition-speed: 600ms;
+  }
+.price-container{
+    background-color: #E4CA9D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+  //  align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.title{
+    font-size: 16rem;
+    z-index: 10;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #BD171E;
+   font-family: Roboto;
+}
+/* .graph{
+    z-index: 10;
+    margin-left: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #C27904;
+} */
+
+.right{
+    //background-color: inherit;
+    z-index: 10;
+    height: 50%;
+    width: 50%;
+    padding: 5px;
+}
+.left{
+    //background-color: inherit;
+    z-index: 10;
+    height: 50%;
+    width: 100%;
+}
+
+p{
+    
+    padding: 20px;
+    color: #BD171E;
+    font-family: Roboto;
+    font-size: 20px;
+    @media screen and (max-width: 700px) {
+        font-size: 15px;
+      }
+}

@@ -1,0 +1,84 @@
+.gen-container{
+background-color: #C27904;
+transition: all 0.3s ease;
+text-align: center;
+bottom: 0;
+display: flex;
+justify-content: center;
+align-items: center;    
+}
+
+
+
+.gen-container::before{
+    content: '';
+    left: 0;
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 58.8%;
+    height: 100%;
+    transform: translate(70%, 70%);
+    background-color: #E4CA9D;
+    transition: none;
+    z-index: 4;
+    
+    
+}
+
+.gen-container::after {
+    left: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 52.8%;
+    height: 100%;
+    background-color: inherit;
+    transform: translate(-4%, 40%);
+    //z-index: -1;
+    transition: none;
+  } 
+
+   .wrap{
+    //border: 2px solid #E4CA9D;
+    height: 60%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: black;
+    box-shadow: 5px 10px 500px;
+    border: 1px solid black;
+    border-radius: 2%;
+    z-index: 3;
+    //opacity: 0.5;
+    transition: 1s all ease;
+    //transform: rotate(-7deg); /* Equal to rotateZ(45deg) */
+    &:hover{
+        width: fit-content;
+        height: 70%;
+        transform: rotate(0deg); /* Equal to rotateZ(45deg) */
+        z-index: 7;
+        box-shadow: 0px 0px 0px;
+        opacity: 1;
+        cursor: none;
+        
+    }
+}
+   
+video{
+    height: 99%;
+    width: 99%;
+    opacity: 0.5;
+    border-radius: 2%;
+    transition: all 300ms ease-in-out;
+    &:hover{
+        height: 100%;
+        width: 100%;
+        border-radius: 2%;
+        opacity: 1;
+    }
+    
+}
